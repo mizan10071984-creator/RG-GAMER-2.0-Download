@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RG GAMER 2.0</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090714;color:#fff;font-family:Arial,sans-serif}
+header{text-align:center;padding:30px 10px;background:linear-gradient(135deg,#160d35,#7600bb);border-bottom:2px solid #bd5cff}
+header h1{margin:0;font-size:30px}
+header p{color:#ddd}
+nav{display:flex;justify-content:center;gap:20px;padding:15px;background:#151024}
+nav a{color:white;text-decoration:none;font-weight:bold}
+.hero{text-align:center;padding:40px 15px}
+.hero h2,.title{color:#d8a5ff}
+.hero p{color:#ccc;line-height:1.7}
+.section{max-width:650px;margin:auto;padding:15px}
+.title{text-align:center}
+.card{background:#171326;border:1px solid #873bba;border-radius:14px;padding:22px 12px;margin:18px 0;text-align:center}
+.card h3{color:#d8a5ff}
+.card p{color:#ccc}
+.btn{display:inline-block;background:linear-gradient(90deg,#7027d9,#c026d3);padding:12px 24px;border-radius:8px;color:white;text-decoration:none;font-weight:bold}
+footer{text-align:center;padding:25px;background:#151024;color:#aaa}
+</style>
+</head>
+<body>
 
+<header>
+<h1>RG GAMER 2.0</h1>
+<p>YOUR ULTIMATE GAMING HUB</p>
+</header>
+
+<nav>
+<a href="#home">HOME</a>
+<a href="#downloads">DOWNLOADS</a>
+<a href="#community">COMMUNITY</a>
+</nav>
+
+<section class="hero" id="home">
+<h2>WELCOME TO RG GAMER</h2>
+<p>Explore our gaming collection and discover classic Free Fire versions.</p>
+<a class="btn" href="#downloads">EXPLORE DOWNLOADS</a>
+</section>
+
+<section class="section" id="downloads">
+<h2 class="title">GAME DOWNLOADS</h2>
+
+<div class="card">
+<h3>FREE FIRE 2023</h3>
+<p>2023 Version</p>
+<a class="btn" href="https://www.mediafire.com/file/df7ey07lvx" target="_blank" rel="noopener">DOWNLOAD</a>
+</div>
+
+<div class="card">
+<h3>FREE FIRE 2022 - 64 BIT</h3>
+<p>64-bit Version</p>
+<a class="btn" href="https://www.mediafire.com/file/va1hnh2pcjfrf6w/x64bits-projectsamel.apk/file" target="_blank" rel="noopener">DOWNLOAD</a>
+</div>
+
+<div class="card">
+<h3>FREE FIRE 2019</h3>
+<p>Version 1.30.0</p>
+<a class="btn" href="https://www.mediafire.com/file/7w491p04phwrkhn/FreeFire-1.30.0-project-samel-corp_2019.apk/file" target="_blank" rel="noopener">DOWNLOAD</a>
+</div>
+</section>
+
+<section class="section" id="community">
+<div class="card">
+<h2>JOIN OUR COMMUNITY</h2>
+<p>Connect with the RG GAMER community.</p>
+<a class="btn" href="https://discord.com/" target="_blank" rel="noopener">JOIN DISCORD</a>
+</div>
+</section>
+
+<footer>
+<p>RG GAMER 2.0</p>
+<p>Gaming Download Center | © 2026</p>
+</footer>
+
+</body>
+</html>
