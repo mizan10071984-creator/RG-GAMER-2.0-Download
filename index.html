@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,73 +8,104 @@
 
 <style>
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background: #080808;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
+    margin: 0;
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 header {
-  padding: 30px 10px;
-  background: linear-gradient(135deg, #ff0000, #250000);
-  border-bottom: 3px solid red;
+    padding: 30px 10px;
+    background: linear-gradient(135deg, #ff0000, #350000);
+    border-bottom: 3px solid red;
 }
 
 header h1 {
-  font-size: 32px;
-  margin: 0;
-  text-shadow: 0 0 12px red;
+    margin: 0;
+    font-size: 30px;
+    text-shadow: 0 0 12px red;
 }
 
 header p {
-  color: #eeeeee;
+    margin-bottom: 0;
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
-  padding: 15px;
+    max-width: 650px;
+    margin: auto;
+    padding: 15px;
 }
 
-.card {
-  background: #171717;
-  border: 1px solid #ff2525;
-  border-radius: 15px;
-  padding: 25px 15px;
-  margin: 22px 0;
-  box-shadow: 0 0 12px #420000;
+.game {
+    background: #171717;
+    border: 1px solid #414141;
+    border-radius: 14px;
+    padding: 24px 12px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px #1e1e1e;
 }
 
-.card h2 {
-  color: #ff3030;
+.game h2 {
+    color: #ff3838;
+    margin-top: 0;
 }
 
-.card p {
-  color: #ccc;
+.game p {
+    color: #cccccc;
 }
 
 .download {
-  display: inline-block;
-  padding: 13px 28px;
-  background: #e60000;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+    display: inline-block;
+    padding: 13px 28px;
+    background: #e60000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
 .download:hover {
-  background: #a00000;
+    background: #ff3333;
+}
+
+/* আলাদা ACCESS ঘর */
+.access-box {
+    background: linear-gradient(145deg, #1c1030, #101010);
+    border: 2px solid #8b35ff;
+    border-radius: 16px;
+    padding: 28px 14px;
+    margin: 25px 0;
+    box-shadow: 0 0 15px #5511aa;
+}
+
+.access-box h2 {
+    color: #bd83ff;
+    margin-top: 0;
+}
+
+.access-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #7900ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.access-button:hover {
+    background: #983cff;
 }
 
 footer {
-  padding: 20px;
-  color: #888;
+    padding: 20px 10px;
+    color: #999;
+    font-size: 13px;
 }
 </style>
 </head>
@@ -81,56 +113,65 @@ footer {
 <body>
 
 <header>
-  <h1>RG GAMER 2.0</h1>
-  <p>FREE FIRE CLASSIC DOWNLOAD CENTER</p>
+    <h1>RG GAMER 2.0</h1>
+    <p>FREE FIRE OLD VERSIONS</p>
 </header>
 
-<div class="container">
+<main class="container">
 
-  <div class="card">
-    <h2>FREE FIRE 2019</h2>
-    <p>Classic Edition</p>
-    <a class="download"
-       href="https://www.mediafire.com/file/7w491p04phwrkhn/FreeFire-1.30.0-project-samel-corp_2019.apk/file"
-       target="_blank" rel="noopener noreferrer">
-       DOWNLOAD
-    </a>
-  </div>
+    <!-- FREE FIRE 2019 -->
+    <section class="game">
+        <h2>FREE FIRE 2019</h2>
+        <p>Version 1.30.0</p>
 
-  <div class="card">
-  <h2>FREE FIRE 2022</h2>
-  <p>2022 Edition</p>
+        <a class="download"
+           href="https://www.mediafire.com/file/7w491p04phwrkhn/FreeFire-1.30.0-project-samel-corp_2019.apk/file"
+           target="_blank" rel="noopener noreferrer">
+            DOWNLOAD
+        </a>
+    </section>
 
-  <a class="download"
-     href="https://www.mediafire.com/file/2ik7zip88r1xun2/x32bits-projectsamel.apk/file"
-     target="_blank"
-     rel="noopener noreferrer">
-   DOWNLOAD
-    
-    <!-- ACCESS FREE FIRE 2022 -->
-<section class="game">
-    <h2>ACCESS FREE FIRE 2022</h2>
-    <p>Access Free Fire 2022</p>
+    <!-- FREE FIRE 2022 DOWNLOAD -->
+    <section class="game">
+        <h2>FREE FIRE 2022</h2>
+        <p>Download Free Fire 2022</p>
 
-    <a class="download"
-       href="https://projectsamelcorp.online/acceso"
-       target="_blank"
-       rel="noopener noreferrer">
-       ACCESS NOW
-    </a>
-</section>
-  </a>
-  </div>
-    </a>
-  </div>
+        <a class="download"
+           href="https://www.mediafire.com/file/2ik7zip88r1xun2/x32bits-projectsamel.apk/file"
+           target="_blank" rel="noopener noreferrer">
+            DOWNLOAD
+        </a>
+    </section>
 
-  <div class="card">
-    <h2>FREE FIRE 2023</h2>
-    <p>2023 Edition</p>
-    <a class="download"
-      href="https://www.mediafire.com/file/wefr17mhq4gmwth/Barbosa_Project_2023.apk/file"
-  © 2026 RG GAMER 2.0
+    <!-- ACCESS FREE FIRE 2022 - SEPARATE BOX -->
+    <section class="access-box">
+        <h2>ACCESS FREE FIRE 2022</h2>
+        <p>Open the access page</p>
+
+        <a class="access-button"
+           href="https://projectsamelcorp.online/acceso"
+           target="_blank" rel="noopener noreferrer">
+            ACCESS NOW
+        </a>
+    </section>
+
+    <!-- FREE FIRE 2023 -->
+    <section class="game">
+        <h2>FREE FIRE 2023</h2>
+        <p>Barbosa Project 2023</p>
+
+        <a class="download"
+           href="https://www.mediafire.com/file/wefr17mhq4gmwth/Barbosa_Project_2023.apk/file"
+           target="_blank" rel="noopener noreferrer">
+            DOWNLOAD
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    RG GAMER 2.0 | Fan-made Gaming Website
 </footer>
 
 </body>
-    </html>
+</html>
