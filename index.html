@@ -3,73 +3,125 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RG GAMER 2.0 | Downloads</title>
+<title>RG GAMER 2.0</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#09090f;color:white;font-family:Arial,sans-serif}
-header{text-align:center;padding:30px 10px;background:linear-gradient(135deg,#ff2424,#390000)}
-header h1{margin:0;font-size:32px}
-header p{margin-bottom:0}
-nav{text-align:center;padding:15px;background:#191923}
-nav a{color:white;text-decoration:none;margin:10px}
-main{max-width:800px;margin:auto;padding:18px}
-input{width:100%;padding:13px;border-radius:8px;background:#191923;color:white;border:1px solid #555}
-.game{padding:20px;margin:18px 0;background:#191923;border:1px solid #444;border-radius:12px}
-.game h2{color:#ff4242}
-.game p{color:#ccc;line-height:1.6}
-.btn{display:inline-block;background:#ed2424;color:white;padding:12px 18px;text-decoration:none;border-radius:7px;font-weight:bold}
-footer{text-align:center;padding:25px;color:#aaa;background:#191923}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 30px 10px;
+  background: linear-gradient(135deg, #ff0000, #250000);
+  border-bottom: 3px solid red;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+  text-shadow: 0 0 12px red;
+}
+
+header p {
+  color: #eeeeee;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 15px;
+}
+
+.card {
+  background: #171717;
+  border: 1px solid #ff2525;
+  border-radius: 15px;
+  padding: 25px 15px;
+  margin: 22px 0;
+  box-shadow: 0 0 12px #420000;
+}
+
+.card h2 {
+  color: #ff3030;
+}
+
+.card p {
+  color: #ccc;
+}
+
+.download {
+  display: inline-block;
+  padding: 13px 28px;
+  background: #e60000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.download:hover {
+  background: #a00000;
+}
+
+footer {
+  padding: 20px;
+  color: #888;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>RG GAMER 2.0</h1>
-<p>YOUR GAMING DOWNLOAD HUB</p>
+  <h1>RG GAMER 2.0</h1>
+  <p>FREE FIRE CLASSIC DOWNLOAD CENTER</p>
 </header>
-<nav>
-<a href="#home">HOME</a>
-<a href="#games">GAMES</a>
-<a href="#about">ABOUT</a>
-</nav>
-<main id="home">
-<h2>🔥 GAME DOWNLOADS</h2>
-<input id="search" placeholder="Search games..." oninput="searchGames()">
-<div id="games">
-<div class="game">
-<h2>FREE FIRE 2019</h2>
-<p>Classic Free Fire gaming experience.</p>
-<a class="btn" href="https://www.mediafire.com/file/g6ikh38zf6k7g5e/FreeFire%2528Apk_1%2529.apk/file" target="_blank">OFFICIAL WEBSITE ↗</a>
-</div><!-- FREE FIRE 2020 -->
-<div class="game">
-  <h2>FREE FIRE 2022</h2>
-  <p>Classic Free Fire gaming experience</p>
-  <a href="https://www.mediafire.com/file/2ik7zip88r1xun2/x32bits-projectsamel.apk/file"target="_blank" rel="noopener noreferrer"
-  <button></button>
-   </a>
+
+<div class="container">
+
+  <div class="card">
+    <h2>FREE FIRE 2019</h2>
+    <p>Classic Edition</p>
+    <a class="download"
+       href="https://www.mediafire.com/file/7w491p04phwrkhn/FreeFire-1.30.0-project-samel-corp_2019.apk/file"
+       target="_blank" rel="noopener noreferrer">
+       DOWNLOAD
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>FREE FIRE 2022</h2>
+    <p>2022 Edition</p>
+    <a class="download"
+       href="https://www.mediafire.com/file/2ik7zip88r1xun2/x32bits-projectsamel.apk/file"
+       target="_blank" rel="noopener noreferrer">
+       DOWNLOAD
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>FREE FIRE 2023</h2>
+    <p>2023 Edition</p>
+    <a class="download"
+       href="https://www.mediafire.com/file/df7ey07lvx66yru/Barbosa_Project_2023_%25281%2529.apk/file"
+       target="_blank" rel="noopener noreferrer">
+       DOWNLOAD
+    </a>
+  </div>
+
 </div>
-<div class="game">
-<h2>Free Fire 2023</h2>
-<p>Explore Free Fire information.</p>
-<a class="btn" href="https://www.mediafire.com/file/df7ey07lvx66yru/Barbosa_Project_2023_%25281%2529.apk/file" target="_blank">VISIT WEBSITE ↗</a>
-</div>
-<div class="game">
-<h2>MORE GAMES</h2>
-<p>New games coming soon!</p>
-</div>
-</div>
-<section id="about">
-<h2>ABOUT RG GAMER</h2>
-<p>Welcome to RG GAMER 2.0 Gaming Hub.</p>
-</section>
-</main>
-<footer>© 2026 RG GAMER 2.0</footer>
-<script>
-function searchGames(){
-let q=document.getElementById('search').value.toLowerCase();
-document.querySelectorAll('.game').forEach(g=>{
-g.style.display=g.innerText.toLowerCase().includes(q)?'block':'none';
-});
-}
-</script>
+
+<footer>
+  © 2026 RG GAMER 2.0
+</footer>
+
 </body>
 </html>
