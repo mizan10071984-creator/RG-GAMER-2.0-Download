@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RG GAMER 2.0 | Downloads</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#09090f;color:white;font-family:Arial,sans-serif}
+header{text-align:center;padding:30px 10px;background:linear-gradient(135deg,#ff2424,#390000)}
+header h1{margin:0;font-size:32px}
+header p{margin-bottom:0}
+nav{text-align:center;padding:15px;background:#191923}
+nav a{color:white;text-decoration:none;margin:10px}
+main{max-width:800px;margin:auto;padding:18px}
+input{width:100%;padding:13px;border-radius:8px;background:#191923;color:white;border:1px solid #555}
+.game{padding:20px;margin:18px 0;background:#191923;border:1px solid #444;border-radius:12px}
+.game h2{color:#ff4242}
+.game p{color:#ccc;line-height:1.6}
+.btn{display:inline-block;background:#ed2424;color:white;padding:12px 18px;text-decoration:none;border-radius:7px;font-weight:bold}
+footer{text-align:center;padding:25px;color:#aaa;background:#191923}
+</style>
+</head>
+<body>
+<header>
+<h1>RG GAMER 2.0</h1>
+<p>YOUR GAMING DOWNLOAD HUB</p>
+</header>
+<nav>
+<a href="#home">HOME</a>
+<a href="#games">GAMES</a>
+<a href="#about">ABOUT</a>
+</nav>
+<main id="home">
+<h2>🔥 GAME DOWNLOADS</h2>
+<input id="search" placeholder="Search games..." oninput="searchGames()">
+<div id="games">
+<div class="game">
+<h2>FREE FIRE 2019</h2>
+<p>Classic Free Fire gaming experience.</p>
+<a class="btn" href="https://ff.garena.com/" target="_blank">OFFICIAL WEBSITE ↗</a>
+</div>
+<div class="game">
+<h2>FREE FIRE MAX</h2>
+<p>Explore Free Fire MAX information.</p>
+<a class="btn" href="https://ff.garena.com/" target="_blank">VISIT WEBSITE ↗</a>
+</div>
+<div class="game">
+<h2>MORE GAMES</h2>
+<p>New games coming soon!</p>
+</div>
+</div>
+<section id="about">
+<h2>ABOUT RG GAMER</h2>
+<p>Welcome to RG GAMER 2.0 Gaming Hub.</p>
+</section>
+</main>
+<footer>© 2026 RG GAMER 2.0</footer>
+<script>
+function searchGames(){
+let q=document.getElementById('search').value.toLowerCase();
+document.querySelectorAll('.game').forEach(g=>{
+g.style.display=g.innerText.toLowerCase().includes(q)?'block':'none';
+});
+}
+</script>
+</body>
+</html>
